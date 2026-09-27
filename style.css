@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* CONFIG GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #20232d;
+    font-family: "Montserrat",Arial, sans-serif;
+    color: #626d72;
+}
+
+/* Pag */
+
+.pagina {
+    width: 92%;
+    margin: 40px auto;
+    background-color: #f5f5f5;
+}
+
+/* CABECALHO */
+
+.topo {
+    background-color: #155b75;
+    height: 105px;
+    padding: 30px 6%;
+
+    display: flex;
+    align-items: center;
+}
+
+.topo h1 {
+    color: #d8e0e3;
+    font-family: "Arial", sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    height: 360px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTEUDO */
+
+.conteudo {
+    padding: 45px 5.5%;
+}
+
+/* TITULOS */
+
+.conteudo h2 {
+    color: #52717e;
+    font-size: 23px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* PRIMEIRO TEXTO */
+
+.introducao {
+    margin-bottom: 55px;
+}
+
+.introducao p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #626d72;
+}
+
+/* SEGUNDO TEXTO */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+
+    margin-bottom: 55px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 30px;
+}
+
+.sobre-texto p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #626d72;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* PRECOS */
+
+.precos h2 {
+    margin-bottom: 40px;
+}
+
+.precos-container {
+    display: flex;
+    gap: 35px;
+}
+
+.preco {
+    flex: 1;
+    min-height: 120px;
+
+    background-color: #a9d9e8;
+    border: 1px solid #7cabb9;
+    border-radius: 6px;
+
+    padding: 35px 25px;
+}
+
+.preco h3 {
+    font-size: 18px;
+    color: #425f6b;
+    margin-bottom: 15px;
+}
+
+.preco p {
+    font-size: 16px;
+    color: #52666e;
+}
+
+.preco.destaque {
+    background-color: #28657a;
+}
+
+.preco.destaque h3,
+.preco.destaque p {
+    color: #f0f3f4;
+}
+
+
+.rodape
+{
+    background-color: #155b75;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .pagina {
+        width: 96%;
+        margin: 15px auto;
+    }
+
+    .topo {
+        padding: 25px;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    .conteudo {
+        padding: 30px 5%;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+    }
+
+    .precos-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
